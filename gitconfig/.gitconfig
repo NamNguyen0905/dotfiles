@@ -1,0 +1,38 @@
+[user]
+        name = Nam Nguyen
+        email = mznnht@amazon.com
+[color]
+        ui = auto
+[core]
+        pager = less -+$LESS -RS
+[push]
+        default = simple
+[alias]
+        dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+        aa = add -A
+        au = add -u
+        br = branch
+        brd = branch -d
+        brD = branch -D
+        bru = branch -u
+        brm = branch -m
+        cm = commit -m
+        co = checkout
+        cob = checkout -b
+        cp = cherry-pick -x
+        df = diff
+        last = log -1 HEAD
+        pu = pull
+        st = status
+        ac = !git add -A && git commit -m
+        amend = commit --amend
+        amendne = commit --amend --no-edit
+        save = !git add -A && git commit -m 'SAVEPOINT'
+        undo = reset HEAD~1 --mixed
+        undohard = reset HEAD~1 --hard
+        wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+        dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+[pull]
+        rebase = true
+[rebase]
+        autostash = true

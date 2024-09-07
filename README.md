@@ -2,9 +2,7 @@
 
 ## Contents
 
-- Homebrew plugins
 - vim (Neovim) config
-- shell config
 - tmux config
 - git config
 - fish config

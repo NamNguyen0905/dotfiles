@@ -13,6 +13,7 @@ alias g git
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
+set -gx NVM_DIR (brew --prefix nvm) # setup PATH for nvm 
 
 # eza aliases
 if type -q eza
